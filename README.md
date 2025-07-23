@@ -6,8 +6,8 @@ A scikit-learn compatible implementation of linear regression algorithms with cl
 ## Features 
 
 - **Two Implementations**:
-  - 📊 Ordinary Least Squares (Closed-form solution)
-  - ⚙️ Gradient Descent (Iterative approach)
+  -  Ordinary Least Squares (Closed-form solution)
+  -  Gradient Descent (Iterative approach)
 - **Scikit-Learn Compatible API**:
   - Same `fit()`/`predict()`/`score()` methods
   - Familiar parameter names
