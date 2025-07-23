@@ -1,3 +1,2 @@
-
 numpy>=1.20.0
 scikit-learn>=0.24.0  # Only needed for examples/comparisons
