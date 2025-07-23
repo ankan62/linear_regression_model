@@ -2,6 +2,23 @@ import numpy as np
 from typing import Tuple
 from .exception import InvalidInputError
 
+
+
+def train_test_split(X, y, test_size=0.2, random_state=None):
+    
+    if random_state is not None:
+        np.random.seed(random_state)
+        
+    n_samples = X.shape[0]
+    test_samples = int(n_samples * test_size)
+    indices = np.random.permutation(n_samples)
+    
+    test_idx = indices[:test_samples]
+    train_idx = indices[test_samples:]
+    
+    return X[train_idx], X[test_idx], y[train_idx], y[test_idx]
+    
+
 def validate_input(X,y) -> Tuple[np.ndarray , np.ndarray]:
     X = np.array(X, dtype=float)
     y = np.array(y, dtype=float).reshape(-1,1)
