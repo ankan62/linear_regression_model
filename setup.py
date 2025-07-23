@@ -1,9 +1,8 @@
-import io 
+import io
+from setuptools import setup, find_packages
 
-
-with io.open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
+with io.open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name="linear_regression_model",
